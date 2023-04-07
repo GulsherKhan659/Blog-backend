@@ -3,19 +3,15 @@
         {
             "src": "index.js",
             "use": "@vercel/node"
-        },
-        {
-            "src": "build/**",
-            "use": "@vercel/static"
         }
     ],
     "routes": [
         {
-            "src": "/",
+            "src": "/api/blog",
             "dest": "/index.js"
         },
         {
-            "src": "/(.*)",
+            "src": "//api/blog/(.*)",
             "dest": "/index.js"
         }
     ]

@@ -20,11 +20,11 @@ async function main() {
 
 app.use(cors())
 app.use(express.json())
-app.use(express.static(path.resolve(__dirname, process.env.PUBLIC_DIR)))
+// app.use(express.static(path.resolve(__dirname, process.env.PUBLIC_DIR)))
 
 app.use('/api', Rout.blog)
 app.use('*', (req, res) => {
-    res.send(path.resolve(__dirname, 'build'))
+    res.send('Some Thing Went Wrong Sorry')
 })
 
 
