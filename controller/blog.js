@@ -5,7 +5,6 @@ exports.getBlogs = async (req, res) => {
     const Blog = await mod.Blog.find({})
 
     res.send(Blog)
-    // res.send('IS WORKING')
 }
 
 
