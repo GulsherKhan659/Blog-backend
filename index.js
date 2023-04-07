@@ -24,7 +24,7 @@ app.use(express.json())
 
 app.use('/api', Rout.blog)
 app.use('*', (req, res) => {
-    res.sendStatus(404).send("SOME THING WENT WRONG")
+    res.send("SOME THING WENT WRONG")
 })
 
 
